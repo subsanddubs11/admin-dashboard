@@ -51,7 +51,7 @@ input {
 /* Sidebar Elements */
 
 li img {
-  width: 1.3rem;
+  width: 1.6rem;
 }
 
 #sidebar-wrapper ul {
@@ -179,6 +179,7 @@ form {
 #hello {
   display: grid;
   grid-template: repeat(2, 1fr) / 1fr 4fr;
+  gap: 0.2rem;
 }
 
 #hello p {
@@ -194,4 +195,25 @@ form {
 #profile-name {
   justify-self: start;
   grid-column: 3 / 5;
+}
+
+/* Main Body */
+
+#main-content {
+  display: grid;
+  grid-template: 1fr 3fr 1fr 3fr / 3fr 1fr
+}
+
+#main-content h3 {
+  align-self: flex-end;
+}
+
+#card-container {
+  grid-row: 2 / 5;
+  grid-column: 1 / 2;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
 }
