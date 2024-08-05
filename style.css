@@ -201,7 +201,7 @@ form {
 
 #main-content {
   display: grid;
-  grid-template: 1fr 5fr 1fr 5fr / 2fr 1fr;
+  grid-template: 1fr 6fr 1fr 7fr / 2fr 1fr;
   padding: 0 0 2rem 1rem;
   gap: 1rem;
 }
@@ -268,4 +268,38 @@ form {
   display: block;
   white-space: nowrap;
   max-width: 90%;
+}
+
+/* Trending page */
+
+.trending-tab {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  background-color: white;
+  padding: 0.5rem 0 0.5rem 2rem;
+  border-radius: 10px;
+  width: 95%;
+}
+
+.trending-profile {
+  display: grid;
+  grid-template: 1fr / 1fr 4fr;
+  align-items: center;
+}
+
+.img-wrap {
+  height: 50px;
+  width: 50px;
+}
+
+.img-wrap img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trending-profile h5 {
+  font-weight: normal;
+  color: gray;
 }
