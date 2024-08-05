@@ -48,11 +48,7 @@ input {
   background-color: var(--gray);
 }
 
-/* Laying Out Child Elements */
-
-#first {
-  width: 2.5rem;
-}
+/* Sidebar Elements */
 
 li img {
   width: 1.3rem;
@@ -106,4 +102,89 @@ li img {
 
 h1 {
   font-size: 1.6rem;
+}
+
+/* Header Elements */
+
+input {
+  border-radius: 50px;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  padding-left: 1rem;
+}
+
+#header {
+  display: grid;
+  grid-template: 1fr 2fr / 5fr 3fr;
+  width: 98%;
+  padding-top: 0.8rem;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  grid-template: 1fr / 1fr 9fr;
+  width: 100%;
+  justify-self: center;
+  gap: 0.9rem;
+}
+
+#search-btn {
+  width: 40%;
+  border: none;
+  background: none;
+  justify-self: end;
+}
+
+#bell {
+  width: 18%;
+  justify-self: end;
+}
+
+#side-icons {
+  display: grid;
+  grid-template: 1fr / 2fr 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
+}
+
+#cat-profile {
+  width: 70%;
+}
+
+#side-icons h3 {
+  justify-self: start;
+}
+
+#button-container {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  gap: 0.8rem;
+  padding: 0 1rem;
+}
+
+.blue-btn {
+  padding: 0.4rem 1.2rem;
+  border: none;
+  background-color: var(--blue);
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+#hello {
+  display: grid;
+  grid-template: repeat(2, 1fr) / 1fr 4fr;
+}
+
+#hello p {
+  align-self: flex-end;
+}
+
+#cat-icon {
+  grid-row: 1 / 3;
+  width: 80%;
+  justify-self: end;
 }
