@@ -50,8 +50,15 @@ input {
 
 /* Sidebar Elements */
 
-li img {
-  width: 1.6rem;
+#img-div img {
+  justify-self: end;
+}
+
+.logo li {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  justify-items: end;
+  padding-right: 0.5rem;
 }
 
 #sidebar-wrapper ul {
@@ -64,6 +71,7 @@ li img {
   display: grid;
   grid-template: 3.6rem 2fr 2fr / 1fr;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 #top-header {
@@ -71,15 +79,18 @@ li img {
   grid-template: 1fr / 1fr 3fr;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
-#top-header img {
-  justify-self: center;
+#dashboard {
+  justify-self: end;
+  padding-left: 1.4rem;
 }
 
 .wrapper {
   display: grid;
   grid-template: 1fr / 1fr 3fr;
+  gap: 1rem;
 }
 
 #second-list ul {
@@ -94,10 +105,6 @@ li img {
 .title {
   align-items: center;
   font-size: 1.3rem;
-}
-
-#dashboard {
-  width: 2.5rem;
 }
 
 h1 {
@@ -132,10 +139,12 @@ form {
 /* Different Section */
 
 #search-btn {
-  width: 40%;
   border: none;
   background: none;
   justify-self: end;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  justify-items: end;
 }
 
 #side-icons {
@@ -161,12 +170,10 @@ form {
 }
 
 #bell {
-  width: 25%;
   justify-self: end;
 }
 
 #cat-profile {
-  width: 90%;
   justify-self: center;
 }
 
@@ -188,7 +195,6 @@ form {
 
 #cat-icon {
   grid-row: 1 / 3;
-  width: 70%;
   justify-self: end;
 }
 
